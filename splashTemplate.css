@@ -1,0 +1,163 @@
+:root {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  width: 95%;
+  margin: 0 auto;
+  height: auto;
+  background-color: blue;
+  font-size: 6vw;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+section {
+  width: 50%;
+  margin: auto;
+  color: aqua;
+  text-align: center;
+}
+
+.logo-container {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.character-container {
+  display: inline-block;
+  width: 0.84em;
+  height: 1.28em;
+  background-color: white;
+  border: 0.04em solid blue;
+}
+
+.thin {
+  width: 0.4em;
+}
+
+.period {
+  height: 0.4em;
+  border-radius: 50%;
+}
+
+.J {
+  border-bottom-left-radius: 0.4em;
+  border-bottom-right-radius: 0.4em;
+}
+
+.J .knockout {
+  width: 0.4em;
+  border-right: 0.04em solid blue;
+  border-left: 0.04em solid blue;
+  background-color: blue;
+  height: 0.64em;
+  position: relative;
+  right: 0.04em;
+  top: -1px;
+  z-index: 2;
+}
+
+.J .knockout-line {
+  border-right: 0.04em solid blue;
+  height: 0.2em;
+  width: 0.4em;
+  z-index: 2;
+  position: relative;
+  top: -1px;
+}
+
+.E {
+  border-top-left-radius: 0.2em;
+  border-bottom-left-radius: 0.2em;
+}
+
+.E div {
+  width: 0.4em;
+  height: 0.4em;
+  border-top: 0.04em solid blue;
+  border-bottom: 0.04em solid blue;
+  position: relative;
+  left: 0.44em;
+  top: 0.4em;
+}
+
+.R {
+  border-top-right-radius: 0.4em;
+}
+
+.R .R-top-line {
+  height: 0.2em;
+  border-right: 0.04em solid blue;
+  width: 0.4em;
+  position: relative;
+  top: 0.3em;
+}
+
+.R .R-bottom-line {
+  position: relative;
+  top: 0.7em;
+  height: 0.4em;
+  width: 0.4em;
+  border-right: 0.04em solid blue;
+}
+
+.A {
+  border-top-left-radius: 0.4em;
+  border-top-right-radius: 0.4em;
+}
+
+.A .A-top-line {
+  height: 0.2em;
+  border-right: 0.04em solid blue;
+  width: 0.4em;
+  position: relative;
+  top: 0.3em;
+}
+
+.A-bottom-line {
+  position: relative;
+  top: 0.7em;
+  height: 0.4em;
+  width: 0.4em;
+  border-right: 0.04em solid blue;
+}
+
+.M {
+  border-top-left-radius: 0.2em;
+  border-top-right-radius: 0.2em;
+}
+
+.M .M-top-line {
+  height: 0.3em;
+  border-right: 0.04em solid blue;
+  width: 0.4em;
+}
+
+.M .M-triangle {
+  position: relative;
+  height: 0.2em;
+  width: 0.2em;
+  border-right: 0.04em solid blue;
+  border-bottom: 0.04em solid blue;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  left: 0.30456em;
+  top: 0.34em;
+}
+
+.M .M-bottom-line {
+  position: relative;
+  top: 0.36em;
+  right: -1px;
+  height: 0.4em;
+  width: 0.4em;
+  border-right: 0.04em solid blue;
+}
+/*# sourceMappingURL=splashTemplate.css.map */

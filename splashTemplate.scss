@@ -1,0 +1,175 @@
+//This is my template for a splash page
+
+//Top section of variables are made to be changed to change global style of the page
+$base-unit: .4em;
+$page-background-color: blue;
+$jerami-logo-color: white;
+$title-text-color: aqua;
+
+
+
+//Some more variables
+$border-width: $base-unit / 10;
+$border: $border-width solid $page-background-color; 
+$character-width: (2 * $base-unit) + $border-width;
+$character-height: (3 * $base-unit) + (2 * $border-width);
+$half-character-height: $character-height / 2;
+$half-unit: $base-unit / 2;
+$quarter-unit: $base-unit /4;
+$knockout-line-width: $border-width * 2;
+
+:root {
+    
+    box-sizing: border-box;
+}
+
+*::before, *::after {
+    box-sizing: inherit;
+}
+body {
+    width:95%;
+    margin: 0 auto;
+    height: auto;
+    background-color: $page-background-color;
+    font-size: 6vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+section {
+width: 50%;
+margin: auto;
+color: $title-text-color;
+text-align: center;
+}
+
+.logo-container {
+    width: 100%;
+    height: auto;
+    text-align:center;
+}
+
+.character-container {
+    display: inline-block;
+    width: $character-width;
+    height: $character-height;
+    background-color: $jerami-logo-color;
+    border: $border;
+}
+
+.thin {
+    width: $base-unit;
+}
+
+.period {
+    height: $base-unit;
+    border-radius: 50%;
+}
+
+.J {
+    border-bottom-left-radius: $base-unit;
+    border-bottom-right-radius: $base-unit;
+    .knockout {
+        width: $base-unit;
+        border-right: $border; 
+        border-left: $border; 
+        background-color: $page-background-color;
+        height: $half-character-height;
+        position: relative;
+        right: $border-width;
+        top:-1px;
+        z-index: 2;
+        
+        
+    }
+    .knockout-line {
+        border-right: $border;
+        height:  $half-unit;
+        width: $base-unit;  
+        z-index: 2;
+        position: relative;
+        top:-1px;      
+    }
+}
+
+.E {
+    border-top-left-radius: $half-unit;
+    border-bottom-left-radius: $half-unit;
+    div {
+        width: $base-unit;
+        height: $base-unit;
+        border-top: $border;
+        border-bottom: $border;
+        position: relative;
+        left: $base-unit + $border-width;
+        top: $base-unit;
+    }
+}
+
+.R {
+    border-top-right-radius: $base-unit;
+    .R-top-line {
+        height: $half-unit;
+        border-right: $border;
+        width: $base-unit;
+        position: relative;
+        top: 3 * $quarter-unit;
+    }
+   
+    .R-bottom-line {
+        position: relative;
+        top:  $base-unit + (3 * $quarter-unit);
+        height: $base-unit;
+        width: $base-unit ;
+        border-right: $border;
+    }
+}
+
+.A {
+    border-top-left-radius: $base-unit;
+    border-top-right-radius: $base-unit;
+    .A-top-line {
+        height: $half-unit;
+        border-right: $border;
+        width: $base-unit;
+        position: relative;
+        top: 3 * $quarter-unit;
+    }     
+}
+
+.A-bottom-line {
+    position: relative;
+    top:  $base-unit + (3 * $quarter-unit);
+    height: $base-unit;
+    width: $base-unit ;
+    border-right: $border;
+}
+
+.M {
+    border-top-left-radius: $half-unit;
+    border-top-right-radius: $half-unit;
+    .M-top-line {
+    height: $half-unit + $quarter-unit;
+    border-right: $border;
+    width: $base-unit;
+      }
+
+    .M-triangle {
+        position: relative; 
+        height: $half-unit; 
+        width: $half-unit; 
+        border-right: $border; 
+        border-bottom: $border;
+        transform: rotate(45deg);
+        left: (3 * $quarter-unit) + (.114* $border-width);
+        top: (3 * $quarter-unit) + $border-width;        
+      }
+      .M-bottom-line {
+        position: relative;
+        top:  (3 * $quarter-unit) + (1.5 * $border-width);
+        right: -1px;
+        height: $base-unit;
+        width: $base-unit;
+        border-right: $border;
+    }
+}
+
